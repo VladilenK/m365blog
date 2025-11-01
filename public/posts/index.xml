@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SharePoint Uncovered</title>
-    <link>https://m365.u2b.dev/</link>
-    <description>Recent content on SharePoint Uncovered</description>
+    <title>Posts on SharePoint Uncovered</title>
+    <link>https://m365.u2b.dev/posts/</link>
+    <description>Recent content in Posts on SharePoint Uncovered</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Nov 2025 08:46:40 -0500</lastBuildDate>
-    <atom:link href="https://m365.u2b.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://m365.u2b.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The First Post</title>
       <link>https://m365.u2b.dev/posts/first-post/</link>
