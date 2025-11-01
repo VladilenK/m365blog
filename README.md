@@ -1,2 +1,3 @@
-# m365blog
-Microsoft 365 Articles, Researches
+# Enterprise Microsoft 365 SharePoint
+# Behind the Scenes of Enterprise SharePoint - Insights from a Senior Engineer on Governance, Automation, and the Real Work That Keeps Collaboration Running
+In this blog, I share lessons learned from nearly two decades of working with SharePoint — from on-prem installations to modern SharePoint Online governance in one of the largest enterprise environments in the U.S. With a focus on automation, lifecycle policies, and tenant-wide optimization, I’ll explore what it really takes to keep collaboration platforms stable, secure, and scalable. This space is for engineers, architects, and IT leaders who want to understand the invisible work that makes enterprise collaboration seamless — and how to prepare for the future with AI, compliance, and strategic governance.
