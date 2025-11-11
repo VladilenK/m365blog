@@ -6,8 +6,15 @@
     <description>Recent content on SharePoint Uncovered</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Nov 2025 08:46:40 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 08:19:09 -0600</lastBuildDate>
     <atom:link href="https://m365.u2b.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SharePoint User Id Mismatch Issue</title>
+      <link>https://m365.u2b.dev/posts/user-id-mismatch-issue/</link>
+      <pubDate>Tue, 11 Nov 2025 08:19:09 -0600</pubDate>
+      <guid>https://m365.u2b.dev/posts/user-id-mismatch-issue/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;&#xA;A common issue in SharePoint, known as &lt;strong&gt;User ID Mismatch&lt;/strong&gt;, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like &lt;em&gt;John Smith&lt;/em&gt; is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The First Post</title>
       <link>https://m365.u2b.dev/posts/first-post/</link>
