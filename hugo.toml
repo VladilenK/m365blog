@@ -1,7 +1,13 @@
 baseURL = 'https://m365.u2b.dev/'
 languageCode = 'en-us'
 title = 'SharePoint Uncovered'
-theme = 'ananke'
 [services]
   [services.googleAnalytics]
     id = 'G-L4RM5WYE2E'
+
+[module]
+[[module.imports]]
+disable = false
+ignoreConfig = false
+ignoreImports = false
+path = 'github.com/theNewDynamic/gohugo-theme-ananke/v2'

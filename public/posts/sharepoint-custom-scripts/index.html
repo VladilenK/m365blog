@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>SharePoint Custom Scripts | SharePoint Uncovered</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.
+Quick Introduction to SharePoint “custom scripts”
+In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a Security risk. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more here.">
+    <meta name="generator" content="Hugo 0.152.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/sharepoint-custom-scripts/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/posts/sharepoint-custom-scripts/">
+  <meta property="og:site_name" content="SharePoint Uncovered">
+  <meta property="og:title" content="SharePoint Custom Scripts">
+  <meta property="og:description" content="Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.
+Quick Introduction to SharePoint “custom scripts” In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in “classic” features (like “script editor web part”). Today Microsoft consider custom scripting in SharePoint Online as a Security risk. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more here.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-25T11:17:57-06:00">
+    <meta property="article:modified_time" content="2025-12-25T11:17:57-06:00">
+
+  <meta itemprop="name" content="SharePoint Custom Scripts">
+  <meta itemprop="description" content="Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.
+Quick Introduction to SharePoint “custom scripts” In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in “classic” features (like “script editor web part”). Today Microsoft consider custom scripting in SharePoint Online as a Security risk. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more here.">
+  <meta itemprop="datePublished" content="2025-12-25T11:17:57-06:00">
+  <meta itemprop="dateModified" content="2025-12-25T11:17:57-06:00">
+  <meta itemprop="wordCount" content="1622">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SharePoint Custom Scripts">
+  <meta name="twitter:description" content="Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.
+Quick Introduction to SharePoint “custom scripts” In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in “classic” features (like “script editor web part”). Today Microsoft consider custom scripting in SharePoint Online as a Security risk. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more here.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        SharePoint Uncovered
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">SharePoint Custom Scripts</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-12-25T11:17:57-06:00">December 25, 2025</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.</p>
+<h2 id="quick-introduction-to-sharepoint-custom-scripts">Quick Introduction to SharePoint “custom scripts”</h2>
+<p>In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a <strong>Security risk</strong>. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more <a href="https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script">here</a>.</p>
+<p>When custom script is blocked, SharePoint disables numerous features (Script/Content Editor, “Save as template,” sandbox solution upload, certain file types, SharePoint Designer operations, etc.), while previously created items continue to function.</p>
+<p>Historically, this was common in classic SharePoint experiences and early SharePoint Online, but Microsoft has steadily constrained it to reduce risk. Modern team/communication sites, OneDrive, and even the root site block custom scripts by default. Microsoft’s guidance encourages migrating  to the SharePoint Framework (SPFx).
+Microsoft tightened policy further in 2024 by removing the easy tenant toggles and expiring the DelayDenyAddAndCustomizePagesEnforcement workaround, making persistent enablement impractical.</p>
+<p>In 2025, classic publishing site templates were set to have custom script disabled by default and new classic publishing sites/feature activation were blocked, with temporary opt‑outs only until March 15, 2026.</p>
+<p>In 2025, Microsoft also introduced a way to update site property bag values without turning on custom script—further reducing reasons to flip that switch</p>
+<p>Looking ahead, SharePoint Online is rolling out Content Security Policy (CSP): tenant admins can now set trusted script sources for modern pages, and enforcement moves from report‑only to full blocking on March 1, 2026, which will impact any customization that loads scripts from untrusted CDNs.</p>
+<p>So let me give you a deep technical overview Of the depreciation of custom scripting in SharePoint online along with the most recent developments</p>
+<h1 id="todays-status-and-the-future-of-custom-scripting-in-sharepoint-online">Today’s status and the Future of custom scripting in SharePoint Online</h1>
+<p>You can still see the following setting in the SharePoint online modern admin center
+custom scripting blocked or allowed
+the scripting setting in the classic SharePoint online admin center has been removed</p>
+<p><strong>Summary of key changes</strong>
+Microsoft is proceeding with the staged retirement of custom scripting across SharePoint online and OneDrive</p>
+<p><strong>Key updates include</strong></p>
+<ul>
+<li>removal of the custom scripting setting from the classic SharePoint admin center (March 2024)</li>
+<li>introduction of the &ldquo;DelayDenyAddAndAustomizePagesEnforcement&rdquo; PowerShell parameter allowing temporary postponement of enforcement until mid November 2024</li>
+<li>After enforcement administrators may temporarily enable custom script on specific sites for 24 hours using Set-SPOSite -DenyAddAndCus&hellip; . This scope is limited and requires repeated enabling</li>
+</ul>
+<h2 id="upcoming-major-enforcement-milestones-new-lane">Upcoming major enforcement milestones new lane</h2>
+<h3 id="mid-january-2026-app-catalog-governance-enforcement">Mid-January 2026 App catalog governance enforcement</h3>
+<ul>
+<li>custom scripting will be disabled by default for the SharePoint online app catalog</li>
+<li>existing scripts will continue functioning but new script development modification require a 24 hour temporary enablement window</li>
+<li>app operations such as uploading updating deploying SPFx and office apps remain unaffected</li>
+</ul>
+<h3 id="september-15-2025-classic-publishing-and-template-enforcement">September 15 2025 (classic publishing and template enforcement)</h3>
+<p>Per MC 1117115 updates found in SharePoint custom script deprecation and web search results.
+Custom scripting is disabled by default for classic publishing templates</p>
+<ul>
+<li>blankInternetContainer</li>
+<li>CMSpublishing</li>
+<li>BlankInternet</li>
+<li>CSPcontainer
+Creation of new classic publishing sites is blocked (UI/API)
+publishing feature activation is prevented
+existing classic publishing sites remain fully functional but operate under no script restrictions</li>
+</ul>
+<h3 id="new-technical-capabilities-introduced">New technical capabilities introduced</h3>
+<ul>
+<li>Property back updates without allowing custom scripts</li>
+<li>Microsoft introduced a new configuration option AllowWeb property back update when deny add and customize age is enabled
+that allows property bag manipulation without disabling no script mode. This applies at both site and tenant level.</li>
+</ul>
+<p>This is a major governance improvement enabling modern customization without reopening scripting vulnerabilities</p>
+<h2 id="improved-administrative-controls">Improved administrative controls</h2>
+<p>Microsoft recommends transitioning customization to supported models</p>
+<ul>
+<li>Sharepoint framework is SPFX</li>
+<li>Power platform (power apps, power automate, power BI)</li>
+<li>Power pages</li>
+<li>PnP templates, APIs</li>
+<li>Site designs and site scripts</li>
+</ul>
+<p>These alternatives offer secure supportable and scalable approaches to customization</p>
+<h3 id="impact-on-your-organization-carriage-return">Impact on your organization carriage return</h3>
+<p><strong>Administrators</strong></p>
+<ul>
+<li>Cannot permanently enable custom scripts post enforcement</li>
+<li>Temporary enabling 24 hours requires continuous reauthorization</li>
+<li>Must prepare for loss of classic features including
+<ul>
+<li>Script editor and content editor web parts</li>
+<li>Custom master pages, page layouts</li>
+<li>Sandbox solution updates</li>
+<li>Sharepoint designer modifications (severely restricted)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Users and site owners</strong></p>
+<ul>
+<li>No ability to upload certain file types, such as .aspx .ascx .swf .xap</li>
+<li>Save site as template, solution gallery, theme gallery, and other legacy features become unavailable</li>
+<li>Existing scripts continue to operate but cannot be modified without temporary scripting enablement</li>
+</ul>
+<h3 id="recommended-customer-actions">Recommended customer actions</h3>
+<ul>
+<li>Inventory existing scripts and identify areas using classic web parts master pages or designer customizations</li>
+<li>Modernize customizations by moving to SPFx, powerapps, site scripts or PnP solutions</li>
+<li>Plan for 24 hour enablement window if future modifications are needed</li>
+<li>Educate site owners on feature removals and modern alternatives</li>
+<li>Review governance policies to ensure alignment with these enforcement timelines</li>
+</ul>
+<pre tabindex="0"><code>
+$pnpTenantSite = Get-PnPTenantSite -Connection $connectionAdmin -Identity $siteUrl -Detailed
+$pnpTenantSite | Select-Object Url, Template, DenyAddAndCustomizePages, SensitivityLabel, Owner | fl
+
+Set-PnPTenantSite -Identity $siteUrl -Connection $connectionAdmin -DenyAddAndCustomizePages:$false
+Set-PnPTenantSite -Identity $siteUrl -Connection $connectionAdmin -DenyAddAndCustomizePages:$true
+
+$tenant = Get-PnPTenant -Connection $connectionAdmin
+$tenant.AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled
+
+
+
+$connectionSite = Connect-PnPOnline -ReturnConnection -Url $siteUrl -ClientId $clientid -Tenant $tenantId -Thumbprint $thumbprint
+$connectionSite.Url
+# Get-PnPPropertyBag -Connection $connectionSite -Key &#34;SiteSearchClassification&#34; # RefinableString08 aka SiteSearchClassification
+Get-PnPPropertyBag -Connection $connectionSite -Key &#34;SiteCustomSubject&#34; # RefinableString09 aka SiteCustomSubject
+Get-PnPPropertyBag -Connection $connectionSite -Key &#34;SiteCustomProperty&#34; # RefinableString09 aka SiteCustomSubject
+
+Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomProperty&#34; -Value &#34;TestSite&#34; -Connection $connectionSite
+Request-PnPReIndexWeb -Connection $connectionSite 
+
+
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue -Key &#34;SiteCustomSubject&#34; -Value &#34;Test&#34; -Indexed:$true -Connection $connectionSite
+
+Confirm
+The current site is a no-script site. Do you want to temporarily enable scripting on it to allow setting property bag value?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is &#34;Y&#34;): y
+
+
+# user
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Get-PnPTenantSite -Identity $siteUrl
+Get-PnPTenantSite: Unable to connect to the SharePoint Online Admin Center at &#39;https://s5dz3-admin.sharepoint.com&#39; to run this cmdlet. If this URL is incorrect for your tenant, you can pass in the correct Admin Center URL using Connect-PnPOnline -TenantAdminUrl. If you are using Privileged Identity Management (PIM) on your tenant, please ensure you have activated at least the SharePoint Administrator role and allowed some time for it to activate. Error message: Attempted to perform an unauthorized operation.
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomSubject&#34; -Value &#34;Test2&#34;
+Set-PnPAdaptiveScopeProperty: Unable to connect to the SharePoint Online Admin Center at &#39;https://s5dz3-admin.sharepoint.com&#39; to run this cmdlet. If this URL is incorrect for your tenant, you can pass in the correct Admin Center URL using Connect-PnPOnline -TenantAdminUrl. If you are using Privileged Identity Management (PIM) on your tenant, please ensure you have activated at least the SharePoint Administrator role and allowed some time for it to activate. Error message: Attempted to perform an unauthorized operation.
+
+
+Set-PnPTenantSite -Connection $connectionAdmin -Identity $siteUrl -DenyAddAndCustomizePages:$false
+
+Get-PnPPropertyBag 
+Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomSubject&#34; -Value &#34;Test2&#34;
+Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test3&#34; -Indexed:$true 
+
+Set-PnPTenantSite -Connection $connectionAdmin -Identity $siteUrl -DenyAddAndCustomizePages:$true
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt;
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomSubject&#34; -Value &#34;Test4&#34;
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test5&#34; -Indexed:$true
+Set-PnPPropertyBagValue: Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; DisConnect-PnPOnline
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Connect-PnPOnline -Url $siteUrl -ClientId $ClientId -Tenant $tenantId -Interactive
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test6&#34; -Indexed:$true
+Set-PnPPropertyBagValue: Unable to connect to the SharePoint Online Admin Center at &#39;https://s5dz3-admin.sharepoint.com&#39; to run this cmdlet. If this URL is incorrect for your tenant, you can pass in the correct Admin Center URL using Connect-PnPOnline -TenantAdminUrl. If you are using Privileged Identity Management (PIM) on your tenant, please ensure you have activated at least the SharePoint Administrator role and allowed some time for it to activate. Error message: Attempted to perform an unauthorized operation.   
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomSubject&#34; -Value &#34;Test7&#34;
+Set-PnPAdaptiveScopeProperty: Unable to connect to the SharePoint Online Admin Center at &#39;https://s5dz3-admin.sharepoint.com&#39; to run this cmdlet. If this URL is incorrect for your tenant, you can pass in the correct Admin Center URL using Connect-PnPOnline -TenantAdminUrl. If you are using Privileged Identity Management (PIM) on your tenant, please ensure you have activated at least the SharePoint Administrator role and allowed some time for it to activate. Error message: Attempted to perform an unauthorized operation.
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Get-PnPTenant -Connection $connectionAdmin | Select-Object AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled
+
+AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled
+--------------------------------------------------------------
+                                                         False
+
+
+Set-PnPTenant -Connection $connectionAdmin -AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled $true
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Get-PnPTenant -Connection $connectionAdmin | Select-Object AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled
+
+AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled
+--------------------------------------------------------------
+                                                          True
+
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt;
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPAdaptiveScopeProperty -Key &#34;SiteCustomSubject&#34; -Value &#34;Test7&#34;
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test6&#34; -Indexed:$true
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Get-PnPPropertyBag
+
+Key                              Value
+---                              -----
+SiteCustomSubject                Test6
+
+
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt;
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test9&#34; -Indexed:$true
+
+Confirm
+The current site is a no-script site. Do you want to temporarily enable scripting on it to allow setting property bag value?
+[Y] Yes  [N] No  [S] Suspend  [?] Help (default is &#34;Y&#34;): y
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Get-PnPPropertyBag
+
+Key                              Value
+---                              -----
+vti_associategroups              5;4;3
+FollowLinkEnabled                TRUE
+vti_associateownergroup          3
+vti_indexedpropertykeys          VABoAGUAbQBlAFAAcgBpAG0AYQByAHkA|UwBpAHQAZQBDAHUAcwB0AG8AbQBQAHIAbwBwAGUAcgB0AHkA|UwBpAHQAZQBDAHUAcwB0AG8AbQBTAHUAYgBqAGUAYwB0AA==|
+disabledhelpcollections
+vti_approvallevels               Approved Rejected Pending\ Review
+vti_defaultlanguage              en-us
+taxonomyhiddenlist               4cc93225-d917-4b8e-9139-a92412a1d1cb
+enabledhelpcollections           VGSEndUser
+vti_sitemasterid                 d2c702b5-65a4-4311-929e-f5dd2daf612b
+_VTI_ACCESSREQUESTSLISTID        2ce14573-1f0f-4ade-ab04-ceafed60c01c,Access Requests
+_VTI_PENDINGREQUESTSVIEWID       /sites/tst/Access Requests/pendingreq.aspx
+contenttypessynctimestampversion 1
+ThemePrimary                     #A4262C
+UseFastCloneFromSiteMaster       FALSE
+vti_associatevisitorgroup        4
+vti_extenderversion              16.0.0.25110
+vti_associatemembergroup         5
+contenttypesusagebackfillversion 3
+_VTI_SHARINGLINKSLISTID          280ba1fc-73cb-4d51-9e83-f71971918afc,Sharing Links
+profileschemaversion             1
+vti_categories                   Travel Expense\ Report Business Competition Goals/Objectives Ideas Miscellaneous Waiting VIP In\ Process Planning Schedule
+vti_createdassociategroups       3;4;5
+SiteCustomProperty               TestSite
+__AllowExternalEmbedding         1
+SiteCustomSubject                Test9
+
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+PS C:\Users\Vlad\code\m365-PowerShell&gt; Set-PnPPropertyBagValue      -Key &#34;SiteCustomSubject&#34; -Value &#34;Test9&#34; -Indexed:$true
+Set-PnPPropertyBagValue: Unable to connect to the SharePoint Online Admin Center at &#39;https://s5dz3-admin.sharepoint.com&#39; to run this cmdlet. If this URL is incorrect for your tenant, you can pass in the correct Admin Center URL using Connect-PnPOnline -TenantAdminUrl. If you are using Privileged Identity Management (PIM) on your tenant, please ensure you have activated at least the SharePoint Administrator role and allowed some time for it to activate. Error message: Attempted to perform an unauthorized operation.   
+
+PS C:\Users\Vlad\code\m365-PowerShell&gt; 
+</code></pre><ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+    &copy;  SharePoint Uncovered 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

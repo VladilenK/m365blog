@@ -91,8 +91,6 @@ Steps:
 
 
 ## See also
-
-
 - [Remove people from the UserInfo list](https://learn.microsoft.com/en-us/sharepoint/remove-users#remove-people-from-the-userinfo-list) - Microsoft
 - [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/troubleshoot/sharepoint/sharing-and-permissions/fix-site-user-id-mismatch) - Microsoft
 - [PowerShell script to detect and fix SharePoint site user ID mismatch issue](https://github.com/VladilenK/m365-PowerShell/tree/main/KBA/User-Id-Mismatch)
