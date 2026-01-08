@@ -13,12 +13,12 @@
       <link>http://localhost:1313/posts/sharepoint-custom-scripts/</link>
       <pubDate>Thu, 25 Dec 2025 11:17:57 -0600</pubDate>
       <guid>http://localhost:1313/posts/sharepoint-custom-scripts/</guid>
-      <description>&lt;p&gt;Since Microsoft is proc&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quick Introduction to SharePoint “custom scripts”&lt;/strong&gt;&#xA;In SharePoint, “custom scripts” broadly refers to client‑side code added to pages. Historically, this was common in classic SharePoint experiences and early SharePoint Online, but Microsoft has steadily constrained it to reduce risk; modern team/communication sites, OneDrive, and even the root site block custom scripts by default. Microsoft’s guidance encourages migrating Script Editor–style solutions to the SharePoint Framework (SPFx), which is supported on modern pages and designed for durable, governance‑friendly client‑side development.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quick-introduction-to-sharepoint-custom-scripts&#34;&gt;Quick Introduction to SharePoint “custom scripts”&lt;/h2&gt;&#xA;&lt;p&gt;In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &amp;ldquo;classic&amp;rdquo; features (like &amp;ldquo;script editor web part&amp;rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a &lt;strong&gt;Security risk&lt;/strong&gt;. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>SharePoint User Id Mismatch Issue</title>
+      <title>SharePoint User Id Mismatch Issue Explained</title>
       <link>http://localhost:1313/posts/user-id-mismatch-issue/</link>
-      <pubDate>Tue, 11 Nov 2025 08:19:09 -0600</pubDate>
+      <pubDate>Tue, 11 Nov 2025 08:19:10 -0600</pubDate>
       <guid>http://localhost:1313/posts/user-id-mismatch-issue/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;&#xA;A common issue in SharePoint, known as &lt;strong&gt;User ID Mismatch&lt;/strong&gt;, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like &lt;em&gt;John Smith&lt;/em&gt; is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.&lt;/p&gt;</description>
     </item>

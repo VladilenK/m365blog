@@ -33,17 +33,16 @@ A common issue in SharePoint, known as User ID Mismatch, occurs when a user acco
     
 
     
-      <link rel="canonical" href="http://localhost:1313/posts/user-id-mismatch-issue/">
+      <link rel="canonical" href="http://localhost:1313/user-id-mismatch-issue/">
     
 
-    <meta property="og:url" content="http://localhost:1313/posts/user-id-mismatch-issue/">
+    <meta property="og:url" content="http://localhost:1313/user-id-mismatch-issue/">
   <meta property="og:site_name" content="SharePoint Uncovered">
   <meta property="og:title" content="SharePoint User Id Mismatch Issue Explained">
   <meta property="og:description" content="Overview
 A common issue in SharePoint, known as User ID Mismatch, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like John Smith is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2025-11-11T08:19:10-06:00">
     <meta property="article:modified_time" content="2025-11-11T08:19:10-06:00">
 
@@ -52,7 +51,7 @@ A common issue in SharePoint, known as User ID Mismatch, occurs when a user acco
 A common issue in SharePoint, known as User ID Mismatch, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like John Smith is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.">
   <meta itemprop="datePublished" content="2025-11-11T08:19:10-06:00">
   <meta itemprop="dateModified" content="2025-11-11T08:19:10-06:00">
-  <meta itemprop="wordCount" content="785">
+  <meta itemprop="wordCount" content="775">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SharePoint User Id Mismatch Issue Explained">
   <meta name="twitter:description" content="Overview
@@ -97,7 +96,7 @@ A common issue in SharePoint, known as User ID Mismatch, occurs when a user acco
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
           
-        Posts
+        SharePoint Uncovered
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
 <h1 class="f1 athelas mt3 mb1">SharePoint User Id Mismatch Issue Explained</h1>
       
@@ -122,15 +121,12 @@ A common issue in SharePoint, known as <strong>User ID Mismatch</strong>, occurs
 <li>A site owner shares content with the user (shares link).</li>
 <li>The user follows the link but gets <strong>“Access Denied”</strong> error.</li>
 </ul>
-<p><strong>Can a users recognize the User id Mismatch issue or it takes an admin efforts?</strong></p>
-<p>Yes, from a user perspective it&rsquo;s possible to notice the difference in the SharePoint and understand if it is a &ldquo;User Id Mismatch&rdquo; issue.</p>
-<p>Normally, when a user hits a SharePoint Url he/she has no access to, an AccessDenied.aspx page is loaded saying &ldquo;You need permission to access this site.&rdquo; and there is a text form pre-populated with &ldquo;I&rsquo;d like access, please.&rdquo; text:</p>
-<p><img src="Screenshot-2026-01-07-210143.png" alt="here is what users sees hitting the Access Denied page"></p>
-<p>When user clicks &ldquo;Request Access&rdquo;  button - an additioal text bar appears that says &ldquo;Awaiting approval. We&rsquo;ll let you know about any updates.&rdquo; Below the form user can see his/her requests history:</p>
-<p><img src="Screenshot-2026-01-07-210100.png" alt="here is what uses sees after he/she requested access"></p>
-<p>In case of a User id Mismatch issue - after user clicks &ldquo;Request Access&rdquo; button - nothing is changed, i.e. there is no &ldquo;Awaiting approval. We&rsquo;ll let you know about any updates.&rdquo;, and there is no user&rsquo;s requests history - a user would still see the same &ldquo;You need permission to access this site.&rdquo; and a form to Request Access:</p>
-<p><img src="Screenshot-2026-01-07-210143.png" alt="here is what users sees hitting the Access Denied page"></p>
-<p>This is how based on the AccessDenied page behavior you can spot the issue.</p>
+<p><strong>Can a users recognize the User id Mismatch issue or it takes an admin efforts?</strong>
+Yes, a user can notice the difference in the SharePoint and understand if it is a &ldquo;User Id Mismatch&rdquo; issue.</p>
+<p>Normally, when a user hits a SharePoint Url he/she has no access to, an AccessDenied.aspx page is loaded saying &ldquo;You need permission to access this site.&rdquo; and there is a form with pre-populated &ldquo;I&rsquo;d like access, please.&rdquo; text.</p>
+<p>When user clicks &ldquo;Request Access&rdquo;  button - an additioal text bar appears that says &ldquo;Awaiting approval. We&rsquo;ll let you know about any updates.&rdquo; Below the form user can see his/her requests history.</p>
+<p>But if it&rsquo;s a User id Mismatch case - and user clicks &ldquo;Request Access&rdquo; button - it does not say &ldquo;Awaiting approval. We&rsquo;ll let you know about any updates.&rdquo;, and there is no user&rsquo;s requests history - a user would still see the same &ldquo;You need permission to access this site.&rdquo; form and a button &ldquo;Request Access&rdquo;.
+So based on the AccessDenied page behavior you can spot the issue.</p>
 <h2 id="why-does-this-happen"><strong>Why Does This Happen?</strong></h2>
 <p>SharePoint maintains its own user data in its database behind, including:</p>
 <ul>

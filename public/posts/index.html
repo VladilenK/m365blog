@@ -102,9 +102,9 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Since Microsoft is proc</p>
-<p><strong>Quick Introduction to SharePoint “custom scripts”</strong>
-In SharePoint, “custom scripts” broadly refers to client‑side code added to pages. Historically, this was common in classic SharePoint experiences and early SharePoint Online, but Microsoft has steadily constrained it to reduce risk; modern team/communication sites, OneDrive, and even the root site block custom scripts by default. Microsoft’s guidance encourages migrating Script Editor–style solutions to the SharePoint Framework (SPFx), which is supported on modern pages and designed for durable, governance‑friendly client‑side development.</p>
+      <p>Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.</p>
+<h2 id="quick-introduction-to-sharepoint-custom-scripts">Quick Introduction to SharePoint “custom scripts”</h2>
+<p>In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a <strong>Security risk</strong>. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more <a href="https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script">here</a>.</p>
     </div>
     <a href="/posts/sharepoint-custom-scripts/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
@@ -118,7 +118,7 @@ In SharePoint, “custom scripts” broadly refers to client‑side code added t
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
       <a href="/posts/user-id-mismatch-issue/" class="link black dim">
-        SharePoint User Id Mismatch Issue
+        SharePoint User Id Mismatch Issue Explained
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
@@ -156,7 +156,7 @@ A common issue in SharePoint, known as <strong>User ID Mismatch</strong>, occurs
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
-    &copy;  SharePoint Uncovered 2025 
+    &copy;  SharePoint Uncovered 2026 
   </a>
     <div><div class="ananke-socials"></div>
 </div>

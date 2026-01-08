@@ -1,7 +1,7 @@
 +++
-date = '2025-11-11T08:19:09-06:00'
+date = '2025-11-11T08:19:10-06:00'
 draft = false
-title = 'SharePoint User Id Mismatch Issue'
+title = 'SharePoint User Id Mismatch Issue Explained'
 +++
 
 
@@ -17,7 +17,24 @@ A common issue in SharePoint, known as **User ID Mismatch**, occurs when a user 
 - A site owner shares content with the user (shares link).
 - The user follows the link but gets **“Access Denied”** error.
 
----
+**Can a users recognize the User id Mismatch issue or it takes an admin efforts?**
+
+Yes, from a user perspective it's possible to notice the difference in the SharePoint and understand if it is a "User Id Mismatch" issue. 
+
+Normally, when a user hits a SharePoint Url he/she has no access to, an AccessDenied.aspx page is loaded saying "You need permission to access this site." and there is a text form pre-populated with "I'd like access, please." text:
+
+![here is what users sees hitting the Access Denied page](Screenshot-2026-01-07-210143.png)
+
+When user clicks "Request Access"  button - an additioal text bar appears that says "Awaiting approval. We'll let you know about any updates." Below the form user can see his/her requests history:
+
+![here is what uses sees after he/she requested access](Screenshot-2026-01-07-210100.png)
+
+In case of a User id Mismatch issue - after user clicks "Request Access" button - nothing is changed, i.e. there is no "Awaiting approval. We'll let you know about any updates.", and there is no user's requests history - a user would still see the same "You need permission to access this site." and a form to Request Access:
+
+![here is what users sees hitting the Access Denied page](Screenshot-2026-01-07-210143.png)
+
+This is how based on the AccessDenied page behavior you can spot the issue. 
+
 
 ## **Why Does This Happen?**
 
@@ -39,8 +56,11 @@ Instead of fixing this in the product, Microsoft provides a workaround: **remove
 ---
 
 ### **Important Notes**
-- Deleting a user from the UIL does **not** remove all related data. For example, document history will still show the old username.
+- Deleting a user from the UIL does **not** remove ALL user's data. For example, document history will still show the old username.
 - Each user or group on a site has a **Site User ID**, an integer starting from 1. Deleting and re-adding the same user retains the same Site User ID, but a reused UPN will get a different number.
+
+---
+
 
 ---
 
