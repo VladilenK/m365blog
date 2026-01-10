@@ -1,5 +1,5 @@
 +++
-date = '2025-11-11T08:19:10-06:00'
+date = '2026-01-03T08:19:10-06:00'
 draft = false
 title = 'SharePoint User Id Mismatch Issue Explained'
 +++
