@@ -6,21 +6,35 @@
     <description>Recent content on SharePoint Uncovered</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Dec 2025 11:17:57 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 09:34:39 -0600</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M365 Search by Author</title>
+      <link>http://localhost:1313/posts/m365-search-by-author/</link>
+      <pubDate>Sun, 08 Feb 2026 09:34:39 -0600</pubDate>
+      <guid>http://localhost:1313/posts/m365-search-by-author/</guid>
+      <description>&lt;h2 id=&#34;how-to-search-documents-by-author-in-microsoft-365&#34;&gt;How to search documents by author in Microsoft 365&lt;/h2&gt;&#xA;&lt;p&gt;I found an interesting behaviou detail while using SharePoint KQL to search documents created by a specific person.&#xA;Let say you use a search query like &amp;ldquo;Author=John&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Microsoft says that it &amp;ldquo;Returns content items authored by John Smith&amp;rdquo; &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference&#34;&gt;Microsoft KQL&lt;/a&gt;. What does that mean &amp;ldquo;authored&amp;rdquo;?. There are two properties at every item - &amp;ldquo;Created By&amp;rdquo; and &amp;ldquo;Modified By&amp;rdquo; (no &amp;ldquo;Authored By&amp;rdquo;) and a history of document versions.&#xA;So I used to interpret this as &amp;ldquo;created or updated by John&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My New Post Title</title>
+      <link>http://localhost:1313/posts/my-new-post-title/</link>
+      <pubDate>Sun, 08 Feb 2026 09:34:00 -0600</pubDate>
+      <guid>http://localhost:1313/posts/my-new-post-title/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SharePoint User Id Mismatch Issue Explained</title>
+      <link>http://localhost:1313/posts/user-id-mismatch-issue/</link>
+      <pubDate>Sat, 03 Jan 2026 08:19:10 -0600</pubDate>
+      <guid>http://localhost:1313/posts/user-id-mismatch-issue/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;&#xA;A common issue in SharePoint, known as &lt;strong&gt;User ID Mismatch&lt;/strong&gt;, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like &lt;em&gt;John Smith&lt;/em&gt; is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SharePoint Custom Scripts</title>
       <link>http://localhost:1313/posts/sharepoint-custom-scripts/</link>
       <pubDate>Thu, 25 Dec 2025 11:17:57 -0600</pubDate>
       <guid>http://localhost:1313/posts/sharepoint-custom-scripts/</guid>
       <description>&lt;p&gt;Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.&lt;/p&gt;&#xA;&lt;h2 id=&#34;quick-introduction-to-sharepoint-custom-scripts&#34;&gt;Quick Introduction to SharePoint “custom scripts”&lt;/h2&gt;&#xA;&lt;p&gt;In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &amp;ldquo;classic&amp;rdquo; features (like &amp;ldquo;script editor web part&amp;rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a &lt;strong&gt;Security risk&lt;/strong&gt;. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more &lt;a href=&#34;https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>SharePoint User Id Mismatch Issue Explained</title>
-      <link>http://localhost:1313/posts/user-id-mismatch-issue/</link>
-      <pubDate>Tue, 11 Nov 2025 08:19:10 -0600</pubDate>
-      <guid>http://localhost:1313/posts/user-id-mismatch-issue/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;br&gt;&#xA;A common issue in SharePoint, known as &lt;strong&gt;User ID Mismatch&lt;/strong&gt;, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like &lt;em&gt;John Smith&lt;/em&gt; is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The First Post</title>

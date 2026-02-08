@@ -47,8 +47,8 @@
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Posts">
-  <meta itemprop="datePublished" content="2025-12-25T11:17:57-06:00">
-  <meta itemprop="dateModified" content="2025-12-25T11:17:57-06:00">
+  <meta itemprop="datePublished" content="2026-02-08T09:34:39-06:00">
+  <meta itemprop="dateModified" content="2026-02-08T09:34:39-06:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
 
@@ -97,16 +97,38 @@
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="/posts/sharepoint-custom-scripts/" class="link black dim">
-        SharePoint Custom Scripts
+      <a href="/posts/m365-search-by-author/" class="link black dim">
+        M365 Search by Author
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.</p>
-<h2 id="quick-introduction-to-sharepoint-custom-scripts">Quick Introduction to SharePoint “custom scripts”</h2>
-<p>In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a <strong>Security risk</strong>. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more <a href="https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script">here</a>.</p>
+      <h2 id="how-to-search-documents-by-author-in-microsoft-365">How to search documents by author in Microsoft 365</h2>
+<p>I found an interesting behaviou detail while using SharePoint KQL to search documents created by a specific person.
+Let say you use a search query like &ldquo;Author=John&rdquo;.
+Microsoft says that it &ldquo;Returns content items authored by John Smith&rdquo; <a href="https://learn.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference">Microsoft KQL</a>. What does that mean &ldquo;authored&rdquo;?. There are two properties at every item - &ldquo;Created By&rdquo; and &ldquo;Modified By&rdquo; (no &ldquo;Authored By&rdquo;) and a history of document versions.
+So I used to interpret this as &ldquo;created or updated by John&rdquo;.
+It turned out - by &ldquo;Author=John&rdquo; search returns only documents created by John or last updated (last modified) by John.
+So the search ignores document updates history and uses only document &ldquo;final&rdquo; (or current) version metadata.</p>
     </div>
-    <a href="/posts/sharepoint-custom-scripts/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+    <a href="/posts/m365-search-by-author/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/my-new-post-title/" class="link black dim">
+        My New Post Title
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+    <a href="/posts/my-new-post-title/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
 
@@ -126,6 +148,26 @@
 A common issue in SharePoint, known as <strong>User ID Mismatch</strong>, occurs when a user account is deleted from the directory and later recreated with the same UPN (User Principal Name). This often happens when an employee is rehired or returned from a long leave or when a common name like <em>John Smith</em> is reused. In short, reusing a username in the directory can trigger a User ID Mismatch in SharePoint.</p>
     </div>
     <a href="/posts/user-id-mismatch-issue/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/sharepoint-custom-scripts/" class="link black dim">
+        SharePoint Custom Scripts
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.</p>
+<h2 id="quick-introduction-to-sharepoint-custom-scripts">Quick Introduction to SharePoint “custom scripts”</h2>
+<p>In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a <strong>Security risk</strong>. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more <a href="https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script">here</a>.</p>
+    </div>
+    <a href="/posts/sharepoint-custom-scripts/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
   </div>
 </div>
 

@@ -47,8 +47,8 @@
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="SharePoint Uncovered">
-  <meta itemprop="datePublished" content="2025-12-25T11:17:57-06:00">
-  <meta itemprop="dateModified" content="2025-12-25T11:17:57-06:00">
+  <meta itemprop="datePublished" content="2026-02-08T09:34:39-06:00">
+  <meta itemprop="dateModified" content="2026-02-08T09:34:39-06:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="SharePoint Uncovered">
 
@@ -113,16 +113,41 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/sharepoint-custom-scripts/" class="color-inherit dim link">
-            SharePoint Custom Scripts
+          <a href="/posts/m365-search-by-author/" class="color-inherit dim link">
+            M365 Search by Author
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>Microsoft is proceeding with the staged retirement of custom scripts across SharePoint Online and OneDrive. Here is what an admin needs to know.</p>
-<h2 id="quick-introduction-to-sharepoint-custom-scripts">Quick Introduction to SharePoint “custom scripts”</h2>
-<p>In SharePoint, “custom scripts” broadly refers to client‑side code (Javascript) added to pages. Custom scripts were actively used for sites customizations, and still present in &ldquo;classic&rdquo; features (like &ldquo;script editor web part&rdquo;). Today Microsoft consider custom scripting in SharePoint Online as a <strong>Security risk</strong>. Custom scripts can execute with the current user’s permissions, making it hard to govern what code runs, who added it, and where it loads resources from—opening doors to script injection, XSS, and compliance/performance issues. See more <a href="https://learn.microsoft.com/en-us/sharepoint/security-considerations-of-allowing-custom-script">here</a>.</p>
+          <h2 id="how-to-search-documents-by-author-in-microsoft-365">How to search documents by author in Microsoft 365</h2>
+<p>I found an interesting behaviou detail while using SharePoint KQL to search documents created by a specific person.
+Let say you use a search query like &ldquo;Author=John&rdquo;.</p>
+<p>Microsoft says that it &ldquo;Returns content items authored by John Smith&rdquo; <a href="https://learn.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference">Microsoft KQL</a>. What does that mean &ldquo;authored&rdquo;?. There are two properties at every item - &ldquo;Created By&rdquo; and &ldquo;Modified By&rdquo; (no &ldquo;Authored By&rdquo;) and a history of document versions.
+So I used to interpret this as &ldquo;created or updated by John&rdquo;.</p>
         </div>
-        <a href="/posts/sharepoint-custom-scripts/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        <a href="/posts/m365-search-by-author/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="w-100 mb4 relative">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
+    <div class="flex-column flex-row-ns flex">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/my-new-post-title/" class="color-inherit dim link">
+            My New Post Title
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          
+        </div>
+        <a href="/posts/my-new-post-title/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>
     </div>
   </div>
@@ -154,32 +179,26 @@ A common issue in SharePoint, known as <strong>User ID Mismatch</strong>, occurs
 
           </div>
         
-          <div class="w-100 mb4 relative">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
-    <div class="flex-column flex-row-ns flex">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/first-post/" class="color-inherit dim link">
-            The First Post
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h2 id="introduction-to-the-microsoft-365-blog">Introduction to the Microsoft 365 Blog</h2>
-<p>This blog is dedicated to the practical side of Microsoft 365 in enterprise environments, with the focus on SharePoint and its surrounding technologies - Search, Copilot, Purview, Teams, OneDrive, Viva Engage, Entra etc. Drawing from nearly 20 years of hands-on experience — from SharePoint on-prem to SharePoint Online — I share lessons learned, governance strategies, automation techniques, and tenant-wide optimization practices. Whether you&rsquo;re an engineer, architect, or IT leader, you&rsquo;ll find actionable insights on managing large-scale SharePoint deployments, navigating Microsoft 365 integrations, and staying ahead in a rapidly evolving collaboration landscape. No buzzwords, no politics — just real SharePoint engineering.</p>
-        </div>
-        <a href="/posts/first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+        <section class="w-100">
+          <h1 class="f3">More</h1>
+          
+          
+            <h2 class="f5 fw4 mb4 dib mr3">
+              <a href="/posts/sharepoint-custom-scripts/" class="link black dim">
+                SharePoint Custom Scripts
+              </a>
+            </h2>
+          
+            <h2 class="f5 fw4 mb4 dib mr3">
+              <a href="/posts/first-post/" class="link black dim">
+                The First Post
+              </a>
+            </h2>
+          
+        </section>
       
 
     </div>

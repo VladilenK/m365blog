@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/m365-search-by-author/</loc>
+    <lastmod>2026-02-08T09:34:39-06:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-25T11:17:57-06:00</lastmod>
+    <lastmod>2026-02-08T09:34:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-08T09:34:39-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/my-new-post-title/</loc>
+    <lastmod>2026-02-08T09:34:00-06:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/user-id-mismatch-issue/</loc>
+    <lastmod>2026-01-03T08:19:10-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/sharepoint-custom-scripts/</loc>
     <lastmod>2025-12-25T11:17:57-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-25T11:17:57-06:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/user-id-mismatch-issue/</loc>
-    <lastmod>2025-11-11T08:19:10-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/first-post/</loc>
     <lastmod>2025-11-01T08:46:40-05:00</lastmod>
